@@ -1,0 +1,15 @@
+---
+- name: Install nginx
+  hosts: localhost
+  become: true
+
+  tasks:
+  - name: Install Git
+    yum:
+      name: git
+      state: present
+
+  - name: Install tmux
+    yum:
+      name: tmux
+      state: present
