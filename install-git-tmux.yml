@@ -4,11 +4,6 @@
   become: true
 
   tasks:
-  - name: Install Git
-    yum:
-      name: git
-      state: present
-
   - name: Install docker
     yum:
       name: docker
